@@ -1,0 +1,18 @@
+<table class="table table-striped table-sm">
+  <thead>
+  <tr>
+    <th scope="col" >Name</th>
+    <th scope="col">Rate</th>
+    <th scope="col">Unit Count</th>
+    <th scope="col">Credit Count</th>
+    <th scope="col">Cost</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each model as |model|}}
+    {{credit-object creditObject=model}}
+  {{/each}}
+  </tbody>
+</table>
+
+{{outlet}}
