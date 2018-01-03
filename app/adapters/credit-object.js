@@ -7,121 +7,161 @@ const _data = [
     description: 'Feature Services Storage (excludes feature attachments)',
     unitMeasure: 'MB',
     creditRate: 2.4,
-    unitRate: 10
+    unitRate: 10,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Feature_Service/02r3000000z2000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/visualization/'
   }, {
     name: 'Tile or Data Storage',
     description: 'Tile and Data Storage (map tiles, feature attachments, scene layer packages, and documents)',
     unitMeasure: 'GB',
     creditRate: 1.2,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Vector_Tile_Service/02r3000002nt000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/visualization/'
   }, {
     name: 'Geocoding',
     description: '',
     unitMeasure: 'per location',
     creditRate: 40,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Geocode_Service/02r3000000q9000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/geocoding/'
   }, {
     name: 'Simple Routes',
     description: '',
     unitMeasure: 'per route',
     creditRate: 0.04,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Route_service_with_synchronous_execution/02r300000036000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Optimized Routes',
     description: '',
     unitMeasure: 'per route',
     creditRate: 0.5,
-    unitRate: 1
+    unitRate: 1,
+    docRest: '',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Drive-Times (Service Areas)',
     description: '',
     unitMeasure: 'per service area',
     creditRate: 0.5,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Service_Area_service_with_synchronous_execution/02r3000000n2000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Closest Facilities',
     description: '',
     unitMeasure: 'per origin/facility pair',
     creditRate: 0.5,
     unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Closest_Facility_service_with_synchronous_execution/02r3000000n7000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Multi-Vehicle Routes (VRP)',
     description: '',
     unitMeasure: 'per route',
     creditRate: 1,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Vehicle_Routing_Problem_service/02r3000000n4000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Location-Allocation',
     description: '',
     unitMeasure: 'per pair',
     creditRate: 0.1,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Location_Allocation_service/02r30000026s000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Origin Destination Cost Matrix',
     description: '',
     unitMeasure: 'per pair',
     creditRate: 0.0005,
-    unitRate: 1
+    unitRate: 1,
+    docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Origin_Destination_Cost_Matrix_service/02r3000002r2000000/',
+    docAgolDev: 'https://developers.arcgis.com/features/directions/'
   }, {
     name: 'Spatial Analysis',
     description: '',
     unitMeasure: 'per feature',
     creditRate: 1,
     unitRate: 1000,
+    docRest: '',
+    docAgolDev: 'https://developers.arcgis.com/rest/analysis/api-reference/getting-started.htm'
   }, {
     name: 'Elevation Analysis',
     description: '',
     unitMeasure: 'per feature',
     creditRate: 1,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: 'https://developers.arcgis.com/rest/elevation/api-reference/get-started-with-elevation-services.htm'
   }, {
     name: 'Business Search',
     description: '',
     unitMeasure: 'per business location',
     creditRate: 10,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Demographic Maps and Layers',
     description: '',
     unitMeasure: 'per pan, zoom, or identify',
     creditRate: 10,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Data Enrichment',
     description: 'Data Enrichment',
     unitMeasure: 'per attribute (data variables multiplied by total feature records)',
     creditRate: 10,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: 'https://developers.arcgis.com/features/geo-enrichment/'
   }, {
     name: 'Infographics',
     description: '',
     unitMeasure: 'per render',
     creditRate: 10,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Report',
     description: '',
     unitMeasure: 'per report',
     creditRate: 10,
-    unitRate: 1
+    unitRate: 1,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Tile Generation',
     description: '',
     unitMeasure: 'per tile',
     creditRate: 1,
-    unitRate: 10000
+    unitRate: 10000,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Scene Layer Generation From Features - textured multipatch',
     description: '',
     unitMeasure: 'per tile',
     creditRate: 1,
-    unitRate: 1000
+    unitRate: 1000,
+    docRest: '',
+    docAgolDev: ''
   }, {
     name: 'Scene Layer Generation From Features - untextured multipatch',
     description: '',
     unitMeasure: 'per tile',
     creditRate: 1,
-    unitRate: 5000
+    unitRate: 5000,
+    docRest: '',
+    docAgolDev: ''
   }
 ];
 
