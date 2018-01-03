@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-import Promise from 'rsvp';
 
 // all the credit objects
 const _data = [
