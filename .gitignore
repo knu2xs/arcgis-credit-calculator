@@ -27,3 +27,6 @@ package.json.ember-try
 
 # deploy file
 config/deploy.js
+
+# mac files
+**/*.DS_Store
