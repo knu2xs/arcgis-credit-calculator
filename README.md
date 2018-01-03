@@ -1,7 +1,6 @@
 # arcgis-credit-calculator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+ArcGIS Online provides a powerful REST API offering a variety of capabilities. These capabilities can be accessed directly by developers, or can also be accessed through the various applications in the ArcGIS platform. Estimating usage, and the associated cost, this is what this simple application is designed to accomplish. 
 
 ## Prerequisites
 
