@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('format-currency', 'helper:format-currency', {
+moduleForComponent('credit-to-cost', 'helper:credit-to-cost', {
   integration: true
 });
 
@@ -9,7 +9,7 @@ moduleForComponent('format-currency', 'helper:format-currency', {
 test('it renders', function(assert) {
   this.set('inputValue', '1234');
 
-  this.render(hbs`{{format-currency inputValue}}`);
+  this.render(hbs`{{credit-to-cost inputValue}}`);
 
   assert.equal(this.$().text().trim(), '1234');
 });
