@@ -1,4 +1,4 @@
-# arcgis-credit-calculator
+# ArcGIS Credit Calculator
 
 ArcGIS Online provides a powerful REST API offering a variety of capabilities. These capabilities can be accessed directly by developers, or can also be accessed through the various applications in the ArcGIS platform. Estimating usage, and the associated cost, this is what this simple application is designed to accomplish. 
 
