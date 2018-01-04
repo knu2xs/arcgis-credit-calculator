@@ -21,7 +21,7 @@ const _data = [
   }, {
     name: 'Geocoding',
     description: '',
-    unitMeasure: 'per location',
+    unitMeasure: 'location',
     creditRate: 40,
     unitRate: 1000,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Geocode_Service/02r3000000q9000000/',
@@ -29,7 +29,7 @@ const _data = [
   }, {
     name: 'Simple Routes',
     description: '',
-    unitMeasure: 'per route',
+    unitMeasure: 'route',
     creditRate: 0.04,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Route_service_with_synchronous_execution/02r300000036000000/',
@@ -37,7 +37,7 @@ const _data = [
   }, {
     name: 'Optimized Routes',
     description: '',
-    unitMeasure: 'per route',
+    unitMeasure: 'route',
     creditRate: 0.5,
     unitRate: 1,
     docRest: '',
@@ -45,7 +45,7 @@ const _data = [
   }, {
     name: 'Drive-Times (Service Areas)',
     description: '',
-    unitMeasure: 'per service area',
+    unitMeasure: 'service area',
     creditRate: 0.5,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Service_Area_service_with_synchronous_execution/02r3000000n2000000/',
@@ -53,7 +53,7 @@ const _data = [
   }, {
     name: 'Closest Facilities',
     description: '',
-    unitMeasure: 'per origin/facility pair',
+    unitMeasure: 'origin/facility pair',
     creditRate: 0.5,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Closest_Facility_service_with_synchronous_execution/02r3000000n7000000/',
@@ -61,7 +61,7 @@ const _data = [
   }, {
     name: 'Multi-Vehicle Routes (VRP)',
     description: '',
-    unitMeasure: 'per route',
+    unitMeasure: 'route',
     creditRate: 1,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Vehicle_Routing_Problem_service/02r3000000n4000000/',
@@ -69,7 +69,7 @@ const _data = [
   }, {
     name: 'Location-Allocation',
     description: '',
-    unitMeasure: 'per pair',
+    unitMeasure: 'pair',
     creditRate: 0.1,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Location_Allocation_service/02r30000026s000000/',
@@ -77,7 +77,7 @@ const _data = [
   }, {
     name: 'Origin Destination Cost Matrix',
     description: '',
-    unitMeasure: 'per pair',
+    unitMeasure: 'pair',
     creditRate: 0.0005,
     unitRate: 1,
     docRest: 'http://resources.arcgis.com/en/help/arcgis-rest-api/#/Origin_Destination_Cost_Matrix_service/02r3000002r2000000/',
@@ -85,7 +85,7 @@ const _data = [
   }, {
     name: 'Spatial Analysis',
     description: '',
-    unitMeasure: 'per feature',
+    unitMeasure: 'feature',
     creditRate: 1,
     unitRate: 1000,
     docRest: '',
@@ -93,7 +93,7 @@ const _data = [
   }, {
     name: 'Elevation Analysis',
     description: '',
-    unitMeasure: 'per feature',
+    unitMeasure: 'feature',
     creditRate: 1,
     unitRate: 1000,
     docRest: '',
@@ -101,7 +101,7 @@ const _data = [
   }, {
     name: 'Business Search',
     description: '',
-    unitMeasure: 'per business location',
+    unitMeasure: 'business location',
     creditRate: 10,
     unitRate: 1000,
     docRest: '',
@@ -109,7 +109,7 @@ const _data = [
   }, {
     name: 'Demographic Maps and Layers',
     description: '',
-    unitMeasure: 'per pan, zoom, or identify',
+    unitMeasure: 'pan, zoom, or identify',
     creditRate: 10,
     unitRate: 1000,
     docRest: '',
@@ -117,7 +117,7 @@ const _data = [
   }, {
     name: 'Data Enrichment',
     description: 'Data Enrichment',
-    unitMeasure: 'per attribute (data variables multiplied by total feature records)',
+    unitMeasure: 'attribute (data variables multiplied by total feature records)',
     creditRate: 10,
     unitRate: 1000,
     docRest: '',
@@ -125,7 +125,7 @@ const _data = [
   }, {
     name: 'Infographics',
     description: '',
-    unitMeasure: 'per render',
+    unitMeasure: 'render',
     creditRate: 10,
     unitRate: 1000,
     docRest: '',
@@ -133,7 +133,7 @@ const _data = [
   }, {
     name: 'Report',
     description: '',
-    unitMeasure: 'per report',
+    unitMeasure: 'report',
     creditRate: 10,
     unitRate: 1,
     docRest: '',
@@ -141,7 +141,7 @@ const _data = [
   }, {
     name: 'Tile Generation',
     description: '',
-    unitMeasure: 'per tile',
+    unitMeasure: 'tile',
     creditRate: 1,
     unitRate: 10000,
     docRest: '',
@@ -149,7 +149,7 @@ const _data = [
   }, {
     name: 'Scene Layer Generation From Features - textured multipatch',
     description: '',
-    unitMeasure: 'per tile',
+    unitMeasure: 'tile',
     creditRate: 1,
     unitRate: 1000,
     docRest: '',
@@ -157,7 +157,7 @@ const _data = [
   }, {
     name: 'Scene Layer Generation From Features - untextured multipatch',
     description: '',
-    unitMeasure: 'per tile',
+    unitMeasure: 'tile',
     creditRate: 1,
     unitRate: 5000,
     docRest: '',

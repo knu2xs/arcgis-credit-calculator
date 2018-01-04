@@ -1,29 +1,33 @@
 <table class="table table-sm table-hover d-lg-table">
   <thead class="thead-light">
   <tr>
-    <th>Resource</th>
-    <th>Credit Rate</th>
-    <th>Unit of Measure</th>
-    <th>Unit Count</th>
-    <th>Credit Count</th>
-    <th>Cost</th>
+    <th scope="col" class="col">Resource</th>
+    <th scope="col" class="col d-none d-lg-table-cell">Credit Rate</th>
+    <th scope="col" class="col d-none d-lg-table-cell">Unit of Measure</th>
+    <th scope="col" class="col">Unit Count</th>
+    <th scope="col" class="col">Credit Count</th>
+    <th scope="col" class="col">Cost</th>
   </tr>
   </thead>
   <tbody>
   {{#each model as |creditObject|}}
     <tr>
-      <td>{{creditObject.name}}</td>
-      <td>{{creditObject.rate}}</td>
-      <td>{{creditObject.unitMeasure}}</td>
-      <td>{{input type='number' class="form-control" value=creditObject.units}}</td>
-      <td>{{format-floating-point creditObject.creditCost}}</td>
-      <td>{{credit-to-cost creditObject.creditCost}}</td>
+      <td class="col">{{creditObject.name}}</td>
+      <td class="col d-none d-lg-table-cell">{{creditObject.rate}}</td>
+      <td class="col d-none d-lg-table-cell">{{creditObject.unitMeasure}}</td>
+      <td class="col">{{input type='number' class="form-control form-control-sm" value=creditObject.units}}</td>
+      <td class="col">{{format-floating-point creditObject.creditCost}}</td>
+      <td class="col">{{credit-to-cost creditObject.creditCost}}</td>
     </tr>
   {{/each}}
-  <tr class="table-primary table-total">
-    <td colspan="4">Total</td>
-    <td>{{format-floating-point creditTotal}}</td>
-    <td>{{credit-to-cost creditTotal}}</td>
+  <tr class="table-primary table-total d-table-row">
+    <td class="col">Total</td>
+    <td class="col d-none d-lg-table-cell"></td>
+    <td class="col d-none d-lg-table-cell"></td>
+    <td class="col"></td>
+    <td class="col">{{format-floating-point creditTotal}}</td>
+    <td class="col">{{credit-to-cost creditTotal}}</td>
   </tr>
   </tbody>
 </table>
+
